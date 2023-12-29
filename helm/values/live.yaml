@@ -1,0 +1,23 @@
+name: pyralight
+
+namespace: pyralight
+env:
+  APP_VERSION: 1e7aa546fdbfe98e945fe9b173f5c96bb9a3f83d
+
+deployment:
+  - name: pyralight
+    image: invisibug/pyralight
+
+service:
+  loadBalancer:
+    - name: pyralight
+      selector: pyralight
+      port: 80
+      containerPort: 3000
+
+ingress:
+  - name: pyralight.co.uk
+    selector: pyralight
+    path: /
+    port: 3000
+    host: pyralight.co.uk
