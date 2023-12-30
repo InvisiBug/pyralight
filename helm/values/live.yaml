@@ -2,7 +2,7 @@ name: pyralight
 
 namespace: pyralight
 env:
-  APP_VERSION: 06b8b31e28c9e85d5d2741537bba5474844a83a9
+  APP_VERSION: 455dd0068128c73ef6461aeba8515ad36470c613
 
 deployment:
   - name: pyralight
