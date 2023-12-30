@@ -11,7 +11,7 @@ deployment:
 service:
   loadBalancer:
     - name: pyralight.co.uk
-      selector: pyralight.co.uk
+      selector: pyralight
       port: 80
       containerPort: 80
 
