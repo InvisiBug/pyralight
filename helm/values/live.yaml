@@ -8,6 +8,13 @@ deployment:
   - name: pyralight
     image: invisibug/pyralight
 
+service:
+  loadBalancer:
+    - name: pyralight.co.uk
+      selector: pyralight.co.uk
+      port: 80
+      containerPort: 80
+
 ingress:
   - name: pyralight.co.uk
     selector: pyralight
