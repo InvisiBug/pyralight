@@ -17,7 +17,7 @@ service:
 
 ingress:
   - name: pyralight-co-uk
-    selector: pyralight
+    selector: pyralight-co-uk
     path: /
     port: 80
     host: pyralight.co.uk
