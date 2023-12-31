@@ -2,7 +2,7 @@ name: pyralight
 
 namespace: pyralight
 env:
-  APP_VERSION: f08c32ac0d070137a88e70ce6c76c34afd82047f
+  APP_VERSION: a236decb3be03a074c338fea58543288eeaa0d8c
 
 deployment:
   - name: pyralight
@@ -17,7 +17,7 @@ service:
 
 ingress:
   - name: pyralight-co-uk
-    selector: pyralight
+    selector: pyralight-co-uk
     path: /
     port: 80
     host: pyralight.co.uk
