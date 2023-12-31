@@ -10,13 +10,13 @@ deployment:
 
 service:
   loadBalancer:
-    - name: pyralight.co.uk
+    - name: pyralight-co-uk
       selector: pyralight
       port: 80
       containerPort: 80
 
 ingress:
-  - name: pyralight.co.uk
+  - name: pyralight-co-uk
     selector: pyralight
     path: /
     port: 80
